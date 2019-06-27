@@ -1,12 +1,11 @@
 {
-  "name": "nativescript-image-filters",
-  "version": "2.2.2",
-  "description": "NativeScript plugin to apply filters to your images.",
+  "name": "nativescript-image-filters-ios",
+  "version": "1.0.0",
+  "description": "NativeScript plugin to apply filters to your images. IOS only.",
   "main": "imagefilters",
   "typings": "index.d.ts",
   "nativescript": {
     "platforms": {
-      "android": "3.0.0",
       "ios": "3.0.0"
     },
     "plugin": {
@@ -20,21 +19,18 @@
     "tsc": "tsc -skipLibCheck",
     "build": "npm i && tsc && npm run build.native",
     "build.native": "node scripts/build-native.js",
-    "test.android": "npm i && npm run tsc && npm run tslint && cd ../demo && tns build android && tns test android --justlaunch",
     "test.ios": "npm i && npm run tsc && npm run tslint && cd ../demo && tns build ios && tns test ios --justlaunch",
     "tslint": "cd .. && tslint \"**/*.ts\" --config tslint.json --exclude \"**/node_modules/**\" --exclude \"*demo*/platforms/**\"",
     "plugin.link": "npm link && cd ../demo && npm link nativescript-geolocation && cd ../src",
     "plugin.tscwatch": "npm run tsc -- -w",
     "demo.ios": "npm i && npm run tsc && cd ../demo && tns run ios --syncAllFiles",
-    "demo.android": "npm i && npm run tsc && cd ../demo && tns run android --syncAllFiles",
     "ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**'",
     "precommit": "lint-staged"
   },
-  "repository": "https://github.com/bradmartin/nativescript-image-filters.git",
+  "repository": "https://github.com/lee-devopa/nativescript-image-filters",
   "keywords": [
     "NativeScript",
     "JavaScript",
-    "Android",
     "iOS",
     "TypeScript",
     "bradmartin",
@@ -51,12 +47,16 @@
     {
       "name": "Andreas Simon",
       "url": "https://github.com/andreassimon"
+    },
+    {
+      "name": "Lee Jordan",
+      "url": "https://github.com/lee-devopa"
     }
   ],
   "bugs": {
-    "url": "https://github.com/bradmartin/nativescript-image-filters/issues"
+    "url": "https://github.com/lee-devopa/nativescript-image-filters/issues"
   },
-  "homepage": "https://github.com/bradmartin/nativescript-image-filters",
+  "homepage": "https://github.com/lee-devopa/nativescript-image-filters",
   "readmeFilename": "README.md",
   "devDependencies": {
     "husky": "^1.3.1",
