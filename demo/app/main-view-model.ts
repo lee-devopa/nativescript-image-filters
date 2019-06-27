@@ -1,7 +1,7 @@
 import { topmost } from 'tns-core-modules/ui/frame';
 import { Image } from 'tns-core-modules/ui/image';
 import { Observable } from 'tns-core-modules/data/observable';
-import { ImageFilters } from 'nativescript-image-filters';
+import { ImageFilters } from 'nativescript-image-filters-ios';
 
 export class MainViewModel extends Observable {
   private _ImageFilters: ImageFilters;

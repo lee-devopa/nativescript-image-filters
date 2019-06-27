@@ -1,75 +1,45 @@
 import { ImageSource } from 'tns-core-modules/image-source';
 import { Image } from 'tns-core-modules/ui/image';
 export declare class ImageFilters {
-  private _processor;
   constructor();
-  private _getBitmap(img);
-  blackAndWhite(img: Image): Promise<ImageSource>;
 
-  highlightImage(
-    img: Image,
-    color: string,
-    radius?: number
-  ): Promise<ImageSource>;
+  sepiaEffect(img: Image, intensity: number): Promise<ImageSource>;
+  gamma(img: Image, intensity: number): Promise<ImageSource>;
   invert(img: Image): Promise<ImageSource>;
-  gamma(
-    img: Image,
-    red: number,
-    green: number,
-    blue: number
-  ): Promise<ImageSource>;
-  colorFilter(
-    img: Image,
-    red: number,
-    green: number,
-    blue: number
-  ): Promise<ImageSource>;
-  sepiaEffect(
-    img: Image,
-    depth: number,
-    red: number,
-    green: number,
-    blue: number
-  ): Promise<ImageSource>;
-  decreaseColorDepth(img: Image, bitOffset: number): Promise<ImageSource>;
-  contrast(img: Image, value: number): Promise<ImageSource>;
-  rotate(img: Image, degree: number): Promise<ImageSource>;
-  brightness(img: Image, value: number): Promise<ImageSource>;
-  gaussianBlur(img: Image): Promise<ImageSource>;
-  createShadow(img: Image): Promise<ImageSource>;
-  sharpen(img: Image, weight: number): Promise<ImageSource>;
-  meanRemoval(img: Image): Promise<ImageSource>;
-  smooth(img: Image, value: number): Promise<ImageSource>;
-  emboss(img: Image): Promise<ImageSource>;
-  engrave(img: Image): Promise<ImageSource>;
-  boost(img: Image, type: number, percent: number): Promise<ImageSource>;
-  roundCorner(img: Image, round: number): Promise<ImageSource>;
-  waterMark(
-    img: Image,
-    watermark: string,
-    location: Point,
-    color: number,
-    alpha: number,
-    size: number,
-    underline: boolean
-  ): Promise<ImageSource>;
-  flip(img: Image, type: number): Promise<ImageSource>;
-  tintImage(img: Image, degree: number): Promise<ImageSource>;
-  fleaEffect(img: Image): Promise<ImageSource>;
-  blackFilter(img: Image): Promise<ImageSource>;
-  snowEffect(img: Image): Promise<ImageSource>;
-  shadingFilter(img: Image, shadingColor: number): Promise<ImageSource>;
-  saturationFilter(img: Image, level: number): Promise<ImageSource>;
-  hueFilter(img: Image, level: number): Promise<ImageSource>;
-  reflection(img: Image): Promise<ImageSource>;
-  replaceColor(
-    img: Image,
-    fromColor: string,
-    targetColor: string
-  ): Promise<ImageSource>;
-}
-
-declare class Point {
-  x: number;
-  y: number;
+  chromeEffect(img: Image): Promise<ImageSource>;
+  fadeEffect(img: Image): Promise<ImageSource>;
+  vintage(img: Image): Promise<ImageSource>;
+  colorize(img: Image, intensity: number): Promise<ImageSource>;
+  motionBlur(img: Image): Promise<ImageSource>;
+  comicBook(img: Image): Promise<ImageSource>;
+  crystalize(img: Image): Promise<ImageSource>;
+  colorEdges(img: Image): Promise<ImageSource>;
+  coloringBook(img: Image): Promise<ImageSource>;
+  dull(img: Image): Promise<ImageSource>;
+  threeD(img: Image): Promise<ImageSource>;
+  sketch(img: Image): Promise<ImageSource>;
+  pointillize(img: Image): Promise<ImageSource>;
+  spotLight(img: Image): Promise<ImageSource>;
+  kaleidoscope(img: Image): Promise<ImageSource>;
+  opTile(img: Image): Promise<ImageSource>;
+  perspectiveTile(img: Image): Promise<ImageSource>;
+  twirl(img: Image): Promise<ImageSource>;
+  exposure(img: Image, intensity: number): Promise<ImageSource>;
+  brightness(img: Image, intensity: number): Promise<ImageSource>;
+  vibrant(img: Image, intensity: number): Promise<ImageSource>;
+  gaussianBlur(img: Image, radius: number): Promise<ImageSource>;
+  blackAndWhite(img: Image): Promise<ImageSource>;
+  tonalEffect(img: Image): Promise<ImageSource>;
+  circularWrap(img: Image): Promise<ImageSource>;
+  holeDistort(img: Image): Promise<ImageSource>;
+  lightTunnel(img: Image): Promise<ImageSource>;
+  pinchDistort(img: Image): Promise<ImageSource>;
+  torusLensDistort(img: Image): Promise<ImageSource>;
+  vortexDistort(img: Image): Promise<ImageSource>;
+  circularScreen(img: Image): Promise<ImageSource>;
+  halftone(img: Image): Promise<ImageSource>;
+  lineScreen(img: Image): Promise<ImageSource>;
+  contrast(img: Image, intensity: number): Promise<ImageSource>;
+  sharpen(img: Image, intensity: number): Promise<ImageSource>;
+  posterize(img: Image, intensity: number): Promise<ImageSource>;
 }

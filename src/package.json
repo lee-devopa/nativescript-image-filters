@@ -1,5 +1,5 @@
 {
-  "name": "nativescript-image-filters",
+  "name": "nativescript-image-filters-ios",
   "version": "1.0.0",
   "description": "NativeScript plugin to apply filters to your images. IOS only.",
   "main": "imagefilters",
