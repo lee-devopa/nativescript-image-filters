@@ -2,19 +2,11 @@
   <ActionBar title="Filters" />
   <ScrollView>
     <StackLayout>
-      <Image id="imageOne" src="~/images/bart.png" height="190" stretch="aspectFit" />
+      <Image id="imageOne" src="~/images/example.png" height="190" stretch="aspectFit" />
       <StackLayout width="100%" orientation="horizontal">
         <Button class="greenBtn" text="Engrave" width="45%" tap="{{ effectEngrave }}" />
         <Button class="greenBtn" text="Black White" width="45%" tap="{{ doBlackWhite }}" />
       </StackLayout>
-      <Button text="Reset" tap="{{ resetBart }}" />
-
-      <Image id="imageTwo" src="~/images/maury.jpg" height="190" stretch="aspectFit" />
-      <StackLayout width="100%" orientation="horizontal">
-        <Button class="greenBtn" text="Invert" width="45%" tap="{{ effectInvert }}" />
-        <Button class="greenBtn" text="Sepia" width="45%" tap="{{ effectSepia }}" />
-      </StackLayout>
-      <Button text="Reset" tap="{{ resetMaury }}" />
-    </StackLayout>
+      <Button text="Reset" tap="{{ resetImage }}" />
   </ScrollView>
 </Page>

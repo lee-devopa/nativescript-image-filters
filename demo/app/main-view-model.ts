@@ -11,31 +11,23 @@ export class MainViewModel extends Observable {
     this._ImageFilters = new ImageFilters();
   }
 
-  resetBart(args) {
+  resetExample(args) {
     const img = topmost().getViewById('imageOne') as Image;
     img.src = null;
     setTimeout(() => {
-      img.src = '~/images/bart.png';
+      img.src = '~/images/example.png';
     }, 100);
   }
 
-  resetMaury(args) {
-    const img = topmost().getViewById('imageTwo') as Image;
-    img.src = null;
-    setTimeout(() => {
-      img.src = '~/images/maury.jpg';
-    }, 100);
-  }
-
-  public effectEngrave() {
+  public sepiaEffect() {
     const img = topmost().getViewById('imageOne') as Image;
-    this._ImageFilters.engrave(img).then(
+    this._ImageFilters.coloringBook(img).then(
       result => {
         console.log(result);
         img.imageSource = result;
       },
       err => {
-        console.log('engrave ERROR: ' + err);
+        console.log('sepia ERROR: ' + err);
       }
     );
   }
@@ -68,7 +60,7 @@ export class MainViewModel extends Observable {
   public effectSepia() {
     const img = topmost().getViewById('imageTwo') as Image;
 
-    this._ImageFilters.sepiaEffect(img, 1, 0.8, 0.5, 0.12).then(
+    this._ImageFilters.sepiaEffect(img, 1).then(
       result => {
         img.imageSource = result;
       },
