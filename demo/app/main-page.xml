@@ -4,9 +4,47 @@
     <StackLayout>
       <Image id="imageOne" src="~/images/example.png" height="190" stretch="aspectFit" />
       <StackLayout width="100%" orientation="horizontal">
-        <Button class="greenBtn" text="Engrave" width="45%" tap="{{ effectEngrave }}" />
-        <Button class="greenBtn" text="Black White" width="45%" tap="{{ doBlackWhite }}" />
+        <Button class="greenBtn" text="sepiaEffect" width="45%" tap="{{ sepiaEffect }}" />
+        <Button class="greenBtn" text="gamma" width="45%" tap="{{ gamma }}" />
+        <Button class="invert" text="invert" width="45%" tap="{{ invert }}" />
+        <Button class="greenBtn" text="chromeEffect" width="45%" tap="{{ chromeEffect }}" />
+        <Button class="greenBtn" text="fadeEffect" width="45%" tap="{{ fadeEffect }}" />
+        <Button class="greenBtn" text="vintage" width="45%" tap="{{ vintage }}" />
+        <Button class="greenBtn" text="colorize" width="45%" tap="{{ colorize }}" />
+        <Button class="greenBtn" text="motionBlur" width="45%" tap="{{ motionBlur }}" />
+        <Button class="greenBtn" text="comicBook" width="45%" tap="{{ comicBook }}" />
+        <Button class="greenBtn" text="crystalize" width="45%" tap="{{ crystalize }}" />
+        <Button class="greenBtn" text="colorEdges" width="45%" tap="{{ colorEdges }}" />
+        <Button class="greenBtn" text="coloringBook" width="45%" tap="{{ coloringBook }}" />
+        <Button class="greenBtn" text="dull" width="45%" tap="{{ dull }}" />
+        <Button class="greenBtn" text="threeD" width="45%" tap="{{ threeD }}" />
+        <Button class="greenBtn" text="sketch" width="45%" tap="{{ sketch }}" />
+        <Button class="greenBtn" text="pointillize" width="45%" tap="{{ pointillize }}" />
+        <Button class="greenBtn" text="spotLight" width="45%" tap="{{ spotLight }}" />
+        <Button class="greenBtn" text="kaleidoscope" width="45%" tap="{{ kaleidoscope }}" />
+        <Button class="greenBtn" text="opTile" width="45%" tap="{{ opTile }}" />
+        <Button class="greenBtn" text="perspectiveTile" width="45%" tap="{{ perspectiveTile }}" />
+        <Button class="greenBtn" text="twirl" width="45%" tap="{{ twirl }}" />
+        <Button class="greenBtn" text="exposure" width="45%" tap="{{ exposure }}" />
+        <Button class="greenBtn" text="brightness" width="45%" tap="{{ brightness }}" />
+        <Button class="greenBtn" text="vibrant" width="45%" tap="{{ vibrant }}" />
+        <Button class="greenBtn" text="gaussianBlur" width="45%" tap="{{ gaussianBlur }}" />
+        <Button class="greenBtn" text="blackAndWhite" width="45%" tap="{{ blackAndWhite }}" />
+        <Button class="greenBtn" text="tonalEffect" width="45%" tap="{{ tonalEffect }}" />
+        <Button class="greenBtn" text="circularWrap" width="45%" tap="{{ circularWrap }}" />
+        <Button class="greenBtn" text="holeDistort" width="45%" tap="{{ holeDistort }}" />
+        <Button class="greenBtn" text="lightTunnel" width="45%" tap="{{ lightTunnel }}" />
+        <Button class="greenBtn" text="pinchDistort" width="45%" tap="{{ pinchDistort }}" />
+        <Button class="greenBtn" text="torusLensDistort" width="45%" tap="{{ torusLensDistort }}" />
+        <Button class="greenBtn" text="vortexDistort" width="45%" tap="{{ vortexDistort }}" />
+        <Button class="greenBtn" text="circularScreen" width="45%" tap="{{ circularScreen }}" />
+        <Button class="greenBtn" text="halftone" width="45%" tap="{{ halftone }}" />
+        <Button class="greenBtn" text="lineScreen" width="45%" tap="{{ lineScreen }}" />
+        <Button class="greenBtn" text="contrast" width="45%" tap="{{ contrast }}" />
+        <Button class="greenBtn" text="sharpen" width="45%" tap="{{ sharpen }}" />
+        <Button class="greenBtn" text="posterize" width="45%" tap="{{ posterize }}" />
       </StackLayout>
       <Button text="Reset" tap="{{ resetImage }}" />
+    </StackLayout>
   </ScrollView>
 </Page>
